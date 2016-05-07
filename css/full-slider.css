@@ -1,0 +1,197 @@
+/*!
+ * Start Bootstrap - Full Slider HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+html,
+body {
+    height: 100%;
+    font-size: 100%;
+}
+
+h2 {
+    font-size: 1.6em;
+    font-weight: 700;
+    text-align: left;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: 500;
+    font-style: italic;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-caption {
+    right: 5%;
+    left: 45%;
+    padding-top: 10px;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.carousel-indicators {
+    left: 70%;
+}
+
+.row {
+    margin: 0 20px;
+}
+
+    .col-md-9 {
+        padding-left: 20px;
+    }   
+
+    .col-md-3 {
+        padding: 0;
+        padding-left: 10px
+    }
+
+
+
+
+.ball {
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.keepExploring {
+    width: auto;
+    height: 55px;
+    border: 3px solid #fff;
+}
+
+
+/* Button -------------------------------------- */
+.btn {
+    font-size: 1.0em;
+    text-align: center;
+
+    left: 12%;
+    margin: 0 auto;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: rgba(255, 30, 44, 0.1);
+    border: 3px solid #E11E2C;
+    border-radius: 0;
+    font-weight: 700;
+    justify-content: center;
+    padding: 15px 12px;
+    text-transform: uppercase;
+}
+
+.btn-success:hover,
+.btn-success:active,
+.btn-success:focus {
+    color: #fff;
+    background-color: #E11E2C;
+    border: 3px solid #E11E2C;
+}
+
+.btn-default {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 3px solid #fff;
+    border-radius: 0;
+    font-weight: 700;
+    justify-content: center;
+    padding: 15px 12px;
+    text-transform: uppercase;
+}
+
+.btn-default:hover,
+.btn-default:active,
+.btn-default:focus {
+    color: #fff;
+    background-color: #E11E2C;
+    border: 3px solid #E11E2C;
+}
+
+/* Navbar -------------------------------------- */
+
+.navcontainer {
+    margin: auto 0px;
+}
+.navbar-inverse {
+    background-color: rgba(0, 0, 0, 1);
+    padding: 15px;
+    border: none;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    max-width: 90%;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+ .navbar>.container .navbar-brand,.navbar>.container-fluid .navbar-brand {
+    margin-left: 36px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #E11E2C;
+}
+
+.navbar-nav > li > a {
+    margin-right: 10px;
+    padding-right: 25px;
+}
+
+
+
+
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+
+
+
+
+
+/*
+
+@media (min-width: 992px) {
+    .col-md-9 {
+        padding-left: 15px;
+    }    
+}
+*/
