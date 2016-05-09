@@ -5,6 +5,7 @@ html,
 body {
     height: 100%;
     font-size: 100%;
+    background-color: #000;
 }
 
 h2 {
@@ -13,14 +14,16 @@ h2 {
     text-align: left;
 }
 
-h3 {
+h3,h4 {
     font-size: 1.2em;
     font-weight: 500;
     font-style: italic;
+    color: #fff;
 }
 
 p {
     line-height: 1.5;
+    color: #fff;
 }
 
 a,
@@ -40,6 +43,7 @@ footer {
 
     h3 {
        margin-top: 10px; 
+         transition: opacity .15s linear;
     }
 
     p {
@@ -91,7 +95,7 @@ footer {
         padding-top: 0;
     }
     .row {
-        margin: 0;
+        margin: 0 40px;
     }
     .carousel-indicators {
         left: 50%;
@@ -144,6 +148,17 @@ footer {
     .navbar > .container .navbar-brand,.navbar >.container-fluid .navbar-brand {
         margin-left: 0;
     }
+}
+
+/* Modal -------------------------------------- */
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 3px solid #fff;
+    border-radius: 0;
+}
+.modal-header,
+.modal-footer {
+    border: none;
 }
 
 /*****************************************************************************
