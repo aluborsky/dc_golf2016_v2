@@ -1,9 +1,6 @@
-/*!
- * Start Bootstrap - Full Slider HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
+/*****************************************************************************
+  Base Styles
+******************************************************************************/
 html,
 body {
     height: 100%;
@@ -26,16 +23,43 @@ p {
     line-height: 1.5;
 }
 
+a,
+a:hover,
+a:focus {
+    color: #fff;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+@media only screen and (max-width : 768px) {
+    body {
+        font-size: 80%;
+    }
+
+    h3 {
+       margin-top: 10px; 
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+}
+
+/*****************************************************************************
+  Module Styles
+******************************************************************************/
+
+/* Carousel -------------------------------------- */
 .carousel,
 .item,
 .active {
     height: 100%;
 }
-
 .carousel-inner {
     height: 100%;
 }
-
 .carousel-caption {
     right: 5%;
     left: 45%;
@@ -43,25 +67,96 @@ p {
     text-align: justify;
     background-color: rgba(0, 0, 0, 0.4);
 }
-
 .carousel-indicators {
     left: 70%;
 }
-
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
 .row {
     margin: 0 20px;
 }
 
-    .col-md-9 {
-        padding-left: 20px;
-    }   
-
-    .col-md-3 {
-        padding: 0;
-        padding-left: 10px
+@media only screen and (max-width : 768px) {
+    .carousel-caption {
+        right: 0;
+        left: 0;
+        bottom: 0;
+        padding-top: 0;
     }
+    .row {
+        margin: 0;
+    }
+    .carousel-indicators {
+        left: 50%;
+        bottom: 0;
+    }
+}
+
+/* Navbar -------------------------------------- */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 15px;
+    border: none;
+}
+
+.navbar.navbar-nav>li>a {
+    color: #fff;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+    background-color: rgba(18, 66, 28, 1);
+}
 
 
+.navbar-toggle {
+      border-radius: 0;
+      border: 3px solid rgba(18, 66, 28, 1);
+}
+
+.navbar-toggle:hover {
+    background-color: rgba(18, 66, 28, 0.4);
+}
+
+
+.icon-bar {
+  background-color: #fff;
+}
+
+
+
+@media only screen and (max-width : 768px) {
+    .navbar {
+        padding: 0px;
+    }
+    .navbar-nav > li > a {
+        line-height: 15px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .navbar > .container .navbar-brand,.navbar >.container-fluid .navbar-brand {
+        margin-left: 0;
+    }
+}
+
+/*****************************************************************************
+  Layout Styles
+******************************************************************************/
+
+.col-md-9 {
+    padding-left: 20px;
+}   
+.col-md-3 {
+    padding: 0;
+    padding-left: 10px
+}
 
 
 .ball {
@@ -72,25 +167,23 @@ p {
     position: relative;
 }
 
-.keepExploring {
-    width: auto;
-    height: 55px;
+.keepExploringImage {
+    width: 150px;
+    height: auto;
     border: 3px solid #fff;
 }
 
-
-/* Button -------------------------------------- */
+/* Buttons -------------------------------------- */
 .btn {
     font-size: 1.0em;
     text-align: center;
-
     left: 12%;
     margin: 0 auto;
 }
 
 .btn-success {
     color: #fff;
-    background-color: rgba(255, 30, 44, 0.1);
+    background-color: rgba(255, 30, 44, 0.4);
     border: 3px solid #E11E2C;
     border-radius: 0;
     font-weight: 700;
@@ -107,91 +200,25 @@ p {
     border: 3px solid #E11E2C;
 }
 
-.btn-default {
-    color: #fff;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 3px solid #fff;
-    border-radius: 0;
-    font-weight: 700;
-    justify-content: center;
-    padding: 15px 12px;
+.btn-nav {
     text-transform: uppercase;
+    background-color: rgba(18, 66, 28, 0.5);
+    border: 3px solid #12421C;
+    font-weight: 700;
+    margin: 0 10px;
 }
 
-.btn-default:hover,
-.btn-default:active,
-.btn-default:focus {
-    color: #fff;
-    background-color: #E11E2C;
-    border: 3px solid #E11E2C;
-}
-
-/* Navbar -------------------------------------- */
-
-.navcontainer {
-    margin: auto 0px;
-}
-.navbar-inverse {
-    background-color: rgba(0, 0, 0, 1);
-    padding: 15px;
-    border: none;
-}
-
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    max-width: 90%;
-}
-
-.navbar-brand {
-    padding: 0;
-}
-
- .navbar>.container .navbar-brand,.navbar>.container-fluid .navbar-brand {
-    margin-left: 36px;
-}
-
-.navbar-inverse .navbar-nav>li>a {
-    color: #fff;
+.btn-nav:hover {
 
 }
-.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
-    color: #E11E2C;
+
+@media only screen and (max-width : 768px) {
+    .ball {
+        width: 110px;
+    }
+
+    .btn {
+        font-size: 0.9em;
+        padding: 10px 7px;
+    }
 }
-
-.navbar-nav > li > a {
-    margin-right: 10px;
-    padding-right: 25px;
-}
-
-
-
-
-
-/* Background images are set within the HTML using inline CSS, not here */
-
-.fill {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-footer {
-    margin: 50px 0;
-}
-
-
-
-
-
-
-/*
-
-@media (min-width: 992px) {
-    .col-md-9 {
-        padding-left: 15px;
-    }    
-}
-*/
