@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,63 +15,35 @@
     <!-- Custom CSS -->
     <link href="css/full-slider.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <style></style>
 </head>
 
 <body>
-
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container navcontainer">
+    <nav class="navbar navbar navbar-fixed-top" role="navigation">
+        <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                
+                <!-- Navbar Brand -->
+                <!-- <a class="navbar-brand" href="https://us-keepexploring.canada.travel" target="_blank"><img src="images/keepexploringlogo.jpg" alt="Keep Exploring" class="keepExploringImage"></a> -->
             </div>
+
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div >
                 <ul class="nav navbar-nav">
-                      <a class="navbar-brand" href="https://us-keepexploring.canada.travel/?utm_source=lookup.ca&utm_medium=vanity_url&utm_campaign=us_ca_spring2016" target="_blank">
-                        <img src="images/keepexploringlogo.jpg" alt="Keep Exploring" class="keepExploring">    
-                    </a>
-                    <li>
-                        <a href="#" class="btn btn-default" role="button">Courses &nbsp; <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
+                    <li><a href="#" class="btn-nav" data-toggle="modal" data-target="#myModal">Win A Trip! &nbsp;<span class="glyphicon glyphicon-edit"></span></a></li> 
+                    <li class="dropdown">
+                       <a href="#" class="dropdown-toggle btn-nav" data-toggle="dropdown" data-target="#" role="button" aria-expanded="false">Courses <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
                     </li>
-
-<!-- <div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Dropdown
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
-</div> -->
-
-
-
-                    <li>
-                        <a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#myModal">Win A Trip! &nbsp; <span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
-                    </li>                  
+                    
                 </ul>
             </div>
-
-
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
@@ -242,27 +213,6 @@
             </div>
         </div>
 
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
         <!-- Controls -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
             <span class="icon-prev"></span>
@@ -270,39 +220,44 @@
         <a class="right carousel-control" href="#myCarousel" data-slide="next">
             <span class="icon-next"></span>
         </a>
-
     </header>
 
-    <!-- Page Content -->
-    <div class="container">
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
+
+    <!-- Footer -->
+<!--     <footer>
         <div class="row">
             <div class="col-lg-12">
-                <h1>Full Slider by Start Bootstrap</h1>
-                <p>The background images for the slider are set directly in the HTML using inline CSS. The rest of the styles for this template are contained within the <code>full-slider.css</code>file.</p>
+                <p>Copyright &copy; Your Website 2014</p>
             </div>
         </div>
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </footer>
+    </footer> -->
 
     </div>
     <!-- /.container -->
 
-    <!-- jQuery -->
+    <!-- Scripts -->
     <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
 
     <!-- Script to Activate the Carousel -->
     <script>
